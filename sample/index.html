@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Content</title>
+    <style>
+        .content {
+            display: none;
+        }
+    </style>
+    <script>
+        function showContent(option) {
+            var contents = document.getElementsByClassName("content");
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = "none";
+            }
+            document.getElementById(option).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <h1>Toggle Content</h1>
+    <button onclick="showContent('option1')">Option 1</button>
+    <button onclick="showContent('option2')">Option 2</button>
+
+    <div id="option1" class="content">
+        <h2>Option 1 Contents</h2>
+        <p>This is the content for Option 1.</p>
+    </div>
+
+    <div id="option2" class="content">
+        <h2>Option 2 Contents</h2>
+        <p>This is the content for Option 2.</p>
+    </div>
+</body>
+</html>

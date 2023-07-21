@@ -1,0 +1,47 @@
+/*----------------HEADER SECTION------------------*/
+@media all and (max-width: 910px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1em;
+        height: 15em;
+    }
+
+    .selector {
+        display: none;
+    }
+    
+    .logo img {
+        height: 6em;
+        width: 6em;
+    }
+}
+@media all and (min-width: 910px) {
+    .custom-dropdown {
+        display: none;
+    }
+    .dropdown-button {
+        display: block;
+    }
+}
+
+@media all and (max-width: 881px) {
+    .vision {
+        width: auto;
+    }
+    .mission {
+        width: auto;
+    }
+    .goals {
+        width: auto;
+    }
+}
+@media all and (max-width: 678px) {
+    .headmid h1 {
+        display: none;
+    }
+}
+
+

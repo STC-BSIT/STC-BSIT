@@ -1,0 +1,86 @@
+/*----------------HEADER SECTION------------------*/
+@media all and (max-width: 910px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1em;
+        height: 15em;
+    }
+
+    .selector {
+        display: none;
+    }
+    
+    .logo img {
+        height: 6em;
+        width: 6em;
+    }
+}
+@media all and (min-width: 910px) {
+    .custom-dropdown {
+        display: none;
+    }
+    .dropdown-button {
+        display: block;
+    }
+}
+
+/*----------------HOME SECTION------------------*/
+
+@media all and (max-width: 1246px) {
+    .homeLogo {
+        display: none;
+    }
+}
+@media all and (max-width: 901px) {
+    .homeCont {
+        margin-top: 13%;
+    }
+}
+@media all and (max-width: 825px) {
+    .homeCont {
+        margin-top: 15%;
+    }
+}
+@media all and (max-width: 613px) {
+    .homeCont {
+        display: none;
+    }
+}
+
+/*----------------STAFF SECTION------------------*/
+
+@media all and (max-width: 797px) {
+    .staffcont {
+        display: none;
+    }
+    .listchart {
+        display: block;
+    }
+    .staff {
+        height: 40em;
+    }
+    .headmid {
+        display: none;
+    }
+}
+
+@media all and (max-width: 490px) {
+    .listchart {
+        width: 20em;
+    }
+}
+
+/*----------------BLANK SECTION------------------*/
+@media all and (max-width: 480px) {
+    .outerh1 h1 {
+        font-size: 20px;
+    }
+    .seeh1blank {
+        height: 2em;
+        width: 20em;
+    }
+
+}

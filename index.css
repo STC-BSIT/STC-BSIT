@@ -1,0 +1,650 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000000;
+}
+
+/*HEADER*/
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+.dropdown-list{
+    list-style: none;
+    width: 100%;
+}
+  
+.dropdown-button {
+    padding: 2em;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 1em;
+}
+  
+.dropdown-list {
+    margin-top: 8px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 4px;
+    display: none;
+}
+  
+.dropdown-list li {
+    margin-bottom: 0.4em;
+}
+  
+.dropdown-list li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+}
+  
+.dropdown-list li a:hover {
+    background-color: #ccc;
+}
+
+
+nav{
+    background-image: url(navheader.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    margin-top: 0.3em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border: black 2px solid;
+    height: 5em;
+}
+nav span {
+    color: white;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-top: 5em;
+    height: 8rem;
+    width: 8rem;
+}
+
+.selector{
+    width: 49em;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.selector ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.selector a{
+    text-decoration: none;
+}
+
+.selector a:hover{
+    text-decoration: underline;
+    color: teal;
+}
+
+.selector {
+    transition: transform 500ms;
+    transition-timing-function: cubic-bezier(.75, -3, .25, 4);
+}
+.selector a:hover {
+    transform: scale(1.2);
+}
+
+
+.selector ul a li{
+    font-size: 2rem;
+    color: black;
+}
+
+.btn {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: rgb(233, 74, 12);
+    padding: 17px 60px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+  
+.btn span {
+    text-align: center;
+    position: relative; 
+    z-index: 1;
+}
+  
+.btn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #181717;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+  
+.btn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+/*HOME*/
+.home {
+    position: relative;
+    border-top: 3px solid;
+    height: 44em;
+    text-align: center;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(80%);
+    filter: brightness(60%);
+    z-index: -1;
+}
+
+.homeCont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6%;
+}
+
+.homeCont .homeLogo {
+    border-radius: 20px;
+    width: 37em;
+}
+
+.homeLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.homeLogo img {
+    height: 17em;
+    width: 17em;
+}
+.homeLogo h1 {
+    font: arial;
+    font-size: 2em;
+    color: white;
+    text-shadow: 
+    10px 10px 10px black,
+    10px 10px 10px black;
+}
+
+.slideshow {
+    background-color: rgba(0,0,0,.3);
+    border-radius: 20px;
+    position: relative;
+    width: 47em;
+    overflow: hidden;
+}
+.slideshow img {
+    width: 100%;
+}
+.slideshow .wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+
+/*STAFF*/
+.staff {
+    background-image: url(navheader.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    height: 55em;
+    position: relative;
+    background-color: white;
+    padding-top: 2em;
+}
+.staffchart {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.listchart {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: #181717 2px solid;
+    border-radius: 20px;
+    padding: 20px;
+    width: 30em;
+    margin: 0 auto;
+    display: none;
+    background-color: #000000;
+    color: white;
+}
+.listchart li {
+    list-style: none;
+    
+}
+.headmid h1 {
+    font-size: 3em;
+    margin-top: 1em;
+    text-align: center;
+    
+}
+.headmid h2 {
+    text-align: center;
+    font-size: 2em;
+}
+.staff img {
+    width: 10em;
+}
+.headerstaff {
+    display: flex;
+    justify-content: center;
+}
+.dean {
+    border: black 4px solid;
+    width: 40em;
+    height: 11.5em;
+    display: flex;
+}
+.staffcard {
+    border: black 4px solid;
+    width: 13em;
+    height: 18em;
+}
+.faculty {
+    display: flex;
+    gap: 3em;
+}
+.staffcont {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 5.8em;
+    justify-content: center;
+    align-items: center;
+}
+.dean {
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+.dean img {
+    width: 8.5em;
+    height: 8.5em;
+    border-radius: 40px;
+    border: black 2px solid;
+}
+.innerdean {
+    gap: 1em;
+    display: flex;
+}
+.role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.innerdean h1 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+.innerdean h2 {
+    font-size: 1.4em;
+    margin-right: 2.6em;
+    text-decoration: underline;
+}
+.staffcard {
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    padding-top: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+.faculty img {
+    width: 10em;
+    height: 10em;
+    border-radius: 10px;
+    border: black 2px solid;
+}
+.facultyrole {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.facultyrole h1 {
+    font-size: 1.5em;
+}
+.facultyrole h2 {
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+
+/*BLANK*/
+.seethrough {
+    
+    height: 38em;
+    background-image: url(homesec/img3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0.6em;
+}
+.seethrough h1 {
+    display: flex;
+    font-size: 2em;
+    color: orange;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+.seeh1blank {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    height: 3em;
+    width: 35em;
+    padding-top: .2em;
+}
+.outerh1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Student*/
+.studentcard {
+    border-top: 3px solid;
+    height: 46em;
+    background-color: #fff;
+    padding: 1em;
+    background-image: url(navheader.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.studentcard h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.buttonBox {
+    width: 30em;
+    padding: 10px;
+    background: #000000;
+    border-radius: 30px;
+
+}
+.buttonBox button {
+    background-color: orangered;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid;
+    transition: transform 500ms;
+    transition-timing-function: cubic-bezier(.75, -3, .25, 4);
+}
+.buttonBox button:hover {
+    transform: scale(1.1);
+}
+.buttonBox button:active,
+.buttonBox button:focus {
+    background-color: darkorange;
+}
+
+.buttonsz {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+.buttoncont {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.content {
+    margin-top: 2em;
+    height: 30em;
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    display: none;   
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+}
+.content::-webkit-scrollbar {
+    width: 1em;
+}
+#option1 {
+    display: flex;
+}
+.option1 .card {
+
+    width: 15em;
+    height: 17em;
+    text-align: center;
+    padding: 0.5em;
+}
+.option2 .card {
+    width: 15em;
+    height: 17em;
+    text-align: center;
+    padding: 0.5em;
+}
+.option3 .card {
+    width: 15em;
+    height: 17em;
+    text-align: center;
+    padding: 0.5em;
+}
+.option4 .card {
+    width: 15em;
+    height: 17em;
+    text-align: center;
+    padding: 0.5em;
+}
+.content img {
+    border: black 4px solid;
+    width: 170px;
+    height: 170px;
+    border-radius: 20px;
+}
+.card {
+    background-color: orangered;
+    border-radius: 10px;
+}
+.card h2 {
+    margin-top: .5em;
+}
+
+/*Footer*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer ul {
+    list-style: none;
+}
+.footer {
+    background-image: url(navheader.jpeg);
+    padding: 70px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col a {
+    text-decoration: none;
+    color: #181717;
+}
+.footer-col h4 {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a::hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+    color: #24262b;
+	background-color: #ffffff;
+}
+.footer-logo img{
+    height: 15em;
+    width: 15em;
+    position: absolute;
+}
+.footer-logo {
+    margin-bottom: 3em;
+}
+/*Footer Responsive*/
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+
+  
