@@ -27,7 +27,10 @@
     }
 }
 
-@media all and (max-width: 881px) {
+@media all and (max-width: 917px) {
+    .vmg {
+        font-size: 13px;
+    }
     .vision {
         width: auto;
     }
@@ -38,8 +41,19 @@
         width: auto;
     }
 }
+@media all and (max-width: 522px) {
+    .vmg {
+        font-size: 10px;
+    }
+}
 @media all and (max-width: 678px) {
     .headmid h1 {
+        display: none;
+    }
+}
+/*------------------FOOTER SECTION----------------*/
+@media all and (max-width: 910px) {
+    .footer-logo {
         display: none;
     }
 }

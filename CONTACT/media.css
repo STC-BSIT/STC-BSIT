@@ -25,3 +25,9 @@
         display: block;
     }
 }
+/*------------------FOOTER SECTION----------------*/
+@media all and (max-width: 910px) {
+    .footer-logo {
+        display: none;
+    }
+}
