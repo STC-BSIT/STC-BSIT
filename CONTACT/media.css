@@ -25,6 +25,16 @@
         display: block;
     }
 }
+@media all and (max-width: 910px) {
+    .contactcard {
+        margin-top: 13%;
+        padding: 6%;
+    }
+    .contactinfo {
+        margin-top: 3%;
+    }
+}
+
 /*------------------FOOTER SECTION----------------*/
 @media all and (max-width: 910px) {
     .footer-logo {

@@ -9,12 +9,12 @@ body {
 
 /*HEADER*/
 .custom-dropdown {
-    background-color: #000000;
+    background-color: rgba(24, 23, 23, 0.7);
     font-family: monospace;
 }
 .custom-dropdown ul {
     list-style: none;
-    background-color: #181717;
+    background-color: rgba(24, 23, 23, 0.4);
 }
 .custom-dropdown ul li {
     display: inline-block;
@@ -37,7 +37,7 @@ body {
 }
 .custom-dropdown ul li ul.dropdown {
     width: 100%;
-    background: #24262b;
+    background-color: rgba(24, 23, 23, 0.7);
     position: absolute;
     z-index: 999;
     display: none;
